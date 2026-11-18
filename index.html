@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A short history of FedRAMP Tailored LI-SaaS, the first authorizations, and how its control evidence and assessment requirements differed from FedRAMP Low.">
+<title>FedRAMP Li-SaaS · A short history</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#report">Skip to report</a>
+<header><div class="wrap mast"><a class="brand" href="https://pwai.dev/">pwai.dev</a><span>Independent research</span></div></header>
+<main class="wrap" id="report" tabindex="-1">
+<div class="hero">
+<div><p class="kicker">FedRAMP Tailored</p><h1>A short history of<br><em>Li-SaaS</em></h1>
+<p class="deck">How FedRAMP changed the evidence agencies needed to authorize low-impact software as a service.</p></div>
+<aside class="milestone"><p class="kicker">First authorizations</p><p class="date"><span>May 14,</span> 2018</p><p>Adobe Creative Cloud for Enterprise<br>and Adobe Document Cloud</p><a href="#first">View historical record ↓</a></aside>
+</div>
+<nav aria-label="Report sections"><a href="#history">Timeline</a><a href="#comparison">Li-SaaS and Low</a><a href="#controls">Control evidence</a><a href="#sources">Sources</a></nav>
+<section id="history"><h2>Why FedRAMP introduced Tailored</h2>
+<p class="lead">An agency considering an online tool had two questions. What harm could a loss of confidentiality, integrity, or availability cause? And what information would staff actually put in it? A Low impact rating answered the first. Eligibility for Li-SaaS also depended on the second.</p>
+<p>The 2017 initiative gave agencies a narrower path for fully operational SaaS offerings. The service could hold the minimum personal information needed for login. A tool collecting personal details in a survey, for example, fell outside that boundary even if the agency categorized the system as Low. For a qualifying service, the agency could focus testing on specified controls and accept the provider’s attestation for others. <a class="ref" href="#s1">[1]</a></p>
+<h3>Timeline</h3>
+<ol class="timeline">
+<li><time>2017 · Drafts</time><div><strong>FedRAMP seeks public comment.</strong> The program office dated its first comment draft January 30 and a revised draft June 19. By August it had finalized the baseline for publication. <a class="ref" href="#s1">[1]</a></div></li>
+<li><time>September 2017</time><div><strong>Tailored launches.</strong> Agencies gained a baseline specifically for low-impact SaaS and its limited data use. <a class="ref" href="#s2">[2]</a></div></li>
+<li id="first"><time datetime="2018-05-14">May 14, 2018</time><div><strong>Adobe receives the first authorizations.</strong> The Marketplace records this date for both Creative Cloud for Enterprise and Document Cloud. Adobe announced the milestone with GSA on May 15. <a class="ref" href="#s3">[3]</a> <a class="ref" href="#s4">[4]</a></div></li>
+<li><time datetime="2023-05">May 2023</time><div><strong>FedRAMP releases its Rev. 5 baselines.</strong> The new workbook carried Tailored forward with a row-by-row guide to the evidence expected for Li-SaaS. <a class="ref" href="#s5">[5]</a> <a class="ref" href="#s6">[6]</a></div></li>
+</ol></section>
+<section id="comparison"><p class="kicker">Agency authorization</p><h2>Li-SaaS and Low, side by side</h2>
+<p>Both started with a FIPS 199 Low categorization. Tailored added eligibility conditions and gave agencies a different way to establish that applicable safeguards were in place.</p>
+<table><caption class="sr">Comparison of historical Li-SaaS and Low agency authorization</caption><thead><tr><th scope="col">Question</th><th scope="col">Tailored Li-SaaS</th><th scope="col">FedRAMP Low</th></tr></thead><tbody>
+<tr><th scope="row">Which services qualified?</th><td><b class="mobile">Tailored Li-SaaS</b>Operational SaaS with personal information limited to login needs, such as username, email, and password. The provider used authorized IaaS or PaaS, or supplied its own underlying infrastructure. <a class="ref" href="#s1">[1]</a></td><td><b class="mobile">FedRAMP Low</b>Low-impact cloud offerings, including infrastructure, platform, and software services. The agency evaluated the information and intended use under FIPS 199. <a class="ref" href="#s7">[7]</a></td></tr>
+<tr><th scope="row">What did the provider document?</th><td><b class="mobile">Tailored Li-SaaS</b>The tailoring instructions specified where a signed attestation sufficed, where to describe and test an implementation, and where responsibility lay with the agency or infrastructure provider. <a class="ref" href="#s1">[1]</a> <a class="ref" href="#s6">[6]</a></td><td><b class="mobile">FedRAMP Low</b>The system security plan described how the service met applicable Low controls, including shared and inherited responsibilities. The assessment plan and report documented testing and findings. <a class="ref" href="#s7">[7]</a></td></tr>
+<tr><th scope="row">Who assessed the service?</th><td><b class="mobile">Tailored Li-SaaS</b>At launch, the agency authorizing official set the degree of independence. A trusted third party, including an accredited third-party assessment organization (3PAO), or the agency itself could assess the service. Rev. 5 explicitly called for independent assessment of controls marked “Document and Assess.” <a class="ref" href="#s1">[1]</a> <a class="ref" href="#s6">[6]</a></td><td><b class="mobile">FedRAMP Low</b>An independent assessor evaluated the applicable baseline. Under Rev. 5 agency guidance, a recognized 3PAO was the usual choice. An agency using its own independent verification team or another assessor had to attest to that organization’s independence. <a class="ref" href="#s7">[7]</a></td></tr>
+<tr><th scope="row">Who accepted the risk?</th><td><b class="mobile">Tailored Li-SaaS</b>The agency authorizing official signed the ATO for the stated use and accepted residual risk. Another agency could reuse the evidence and issue its own decision. <a class="ref" href="#s1">[1]</a></td><td><b class="mobile">FedRAMP Low</b>On the agency path, the authorizing official reviewed the package and decided whether the remaining risk was acceptable for that agency. <a class="ref" href="#s7">[7]</a></td></tr>
+</tbody></table></section>
+<section id="controls"><p class="kicker">Reading the Rev. 5 workbook</p><h2>What counted as evidence?</h2>
+<p class="lead">The Low and Li-SaaS worksheets each list 156 control and enhancement rows. The Li-SaaS worksheet assigns a tailoring action to each row. That action tells a reviewer what evidence to look for. <a class="ref" href="#s6">[6]</a></p>
+<figure><figcaption>How the 156 Li-SaaS rows were handled</figcaption>
+<div class="bar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<dl class="counts"><div><dt>75</dt><dd>Attest</dd></div><div><dt>45</dt><dd>Document and assess</dd></div><div><dt>20</dt><dd>Assess if applicable</dd></div><div><dt>16</dt><dd>Other or split actions</dd></div></dl></figure>
+<p>For the 75 attestation rows, the provider affirmed the safeguard existed. For the 45 assessment rows, an independent assessor examined the implementation. For the 20 conditional rows, the provider either documented the control for assessment or attested that the triggering condition was absent. Of the remaining 16, FedRAMP judged 11 outside the security needs of this SaaS use, assigned three to the federal government, and split two by use case. <a class="ref" href="#s6">[6]</a></p>
+<aside class="example"><h3>Two controls in the same family</h3>
+<p><strong>AC-1 · Policy and procedures.</strong> Low included the access control policy in its assessment scope. Li-SaaS allowed the provider to attest that it had the policy. The assessor did not need to test that row separately.</p>
+<p><strong>AC-2 · Account management.</strong> Both baselines called for assessment. Under Li-SaaS the provider still had to explain how it managed accounts and the assessor had to examine that implementation. Signing the policy attestation for AC-1 supplied no evidence about whether departing users’ accounts were disabled. <a class="ref" href="#s6">[6]</a></p></aside>
+</section>
+<section id="sources"><h2>Sources and reading notes</h2>
+<ol class="sources">
+<li id="s1"><a href="https://static.carahsoft.com/concrete/files/3716/7096/2952/FedRAMP-Tailored-LI-SaaS-Requirements.pdf">FedRAMP Tailored LI-SaaS Requirements</a>. Original program guidance, archived copy. See the revision history and §§ 3.1–3.5 for eligibility, control selection, assessment, and the agency decision.</li>
+<li id="s2"><a href="https://www.gao.gov/assets/gao-20-126.pdf">GAO, Cloud Computing Security (GAO-20-126)</a>. Figure 6 dates the launch to September 2017.</li>
+<li id="s3">FedRAMP Marketplace records for <a href="https://www.fedramp.gov/marketplace/products/FR1820435960/">Adobe Creative Cloud for Enterprise</a> and <a href="https://www.fedramp.gov/marketplace/products/FR1820435961/">Adobe Document Cloud</a>. Both record May 14, 2018.</li>
+<li id="s4"><a href="https://blog.adobe.com/en/publish/2018/05/15/adobe-gsa-introduce-first-fedramp-tailored-offering-improve-digital-government-services">Adobe and GSA introduce the first FedRAMP Tailored offering</a>. The May 15 announcement identifies Adobe as the first provider.</li>
+<li id="s5"><a href="https://www.fedramp.gov/resources/documents/FedRAMP_Baselines_Rev5_Transition_Guide.pdf">FedRAMP Baseline Revision 5 Transition Plan</a>. The May 2023 release aligned the baselines with NIST SP 800-53 Rev. 5.</li>
+<li id="s6"><a href="https://www.fedramp.gov/resources/documents/FedRAMP_Security_Controls_Baseline.xlsx">FedRAMP Security Controls Baseline (Excel)</a>. Counts and examples use the Low Baseline, Key to LI-SaaS Baseline, and LI-SaaS Baseline worksheets. Each control or enhancement counts once. Rows with two actions are counted separately from single-action rows.</li>
+<li id="s7"><a href="https://www.fedramp.gov/resources/documents/CSP_Authorization_Playbook.pdf">FedRAMP Cloud Service Provider Authorization Playbook</a>. Rev. 5 guidance on categorization, assessor independence, and the agency authorization package.</li>
+</ol></section></main>
+<footer><div class="wrap">Unofficial, AI-generated historical research by Pete Wai. Independent of GSA and FedRAMP.</div></footer></body></html>
